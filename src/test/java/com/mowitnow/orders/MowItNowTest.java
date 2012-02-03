@@ -1,16 +1,15 @@
-package com.mowitnow.test;
+package com.mowitnow.orders;
 
 import com.mowitnow.environment.Area;
 import com.mowitnow.environment.Gardener;
 import com.mowitnow.environment.Mower;
 import com.mowitnow.environment.Position;
-import com.mowitnow.orders.Orders;
 import com.mowitnow.orientation.CardinalDirection;
 import com.mowitnow.orientation.Orientation;
 import com.mowitnow.orientation.OrientationFactory;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import org.junit.Assert;
 
 import java.util.Iterator;
 import java.util.LinkedHashMap;

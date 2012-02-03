@@ -9,24 +9,9 @@ import java.util.Set;
  */
 public class Area {
 
-    /**
-     * Different area's positions
-     */
     private Set<Position> positions;
-
-    /**
-     * Mowers installed this area
-     */
     private Set<Mower> mowers;
-
-    /**
-     * Area width
-     */
     private int width;
-
-    /**
-     * Area length
-     */
     private int length;
 
     /**
@@ -62,9 +47,6 @@ public class Area {
         return mowers;
     }
 
-    /**
-     * Initializes area
-     */
     private void initializeArea() {
         for (int i = 0; i <= width; i++) {
             for (int j = 0; j <= length; j++) {
@@ -74,11 +56,6 @@ public class Area {
         }
     }
 
-    /**
-     * Check if an area position collides with other one
-     * @param position current mower position
-     * @return true if current mower position does not collide with other one in area
-     */
     private boolean doesNotCollideWith(Position position) {
         for (Mower mower : mowers) {
             if (mower.getCurrentPosition().equals(position)) {
